@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-computers",
+  "version": "${version}",
+  "name": "Computer mod",
+  "description": "This is a mod to add programmable computers to the game.",
+  "authors": [
+    "sqyyy"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fabric-computers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.sqyyy.fabriccomputers.FabricComputersMod"
+    ]
+  },
+  "mixins": [
+    "fabric-computers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
